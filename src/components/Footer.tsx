@@ -1,9 +1,9 @@
 const Footer = () => {
   return (
-    <div className="py-20 px-[5%] text-textgray flex justify-between space-x-72">
+    <div className="py-20 px-[5%] text-textgray flex justify-between space-x-72 max-lg:flex-col">
       <div className="space-y-6 w-1/2">
         <img src="./logo.svg" alt="" width={120} />
-        <p className="w-[35rem]">
+        <p className="lg:w-[35rem]">
           Dekoor is a furniture company created to fulfill the needs of family with aesthetic
           feeling in their furniture. Always pay attention to details and give clear communication
           for the customers. Priority of our design is comfortability.

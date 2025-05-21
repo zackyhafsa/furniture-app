@@ -2,7 +2,7 @@ import { Mail } from "lucide-react";
 
 const Membership = () => {
   return (
-    <div className="py-20 px-52 text-text bg-graylight space-y-10">
+    <div className="py-20 px-[10%] text-text bg-graylight space-y-10">
       <h1 className="text-2xl tracking-wide uppercase">Limited Deals</h1>
       <h1 className="font-bold text-6xl">Become a member and get 10% off of your first purchase</h1>
       <div className="flex items-center">
