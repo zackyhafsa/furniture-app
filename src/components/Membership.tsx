@@ -9,7 +9,7 @@ const Membership = () => {
         <input
           type="email"
           placeholder="Enter your email here"
-          className="text-2xl py-3 px-5 bg-white rounded-l-xl"
+          className="text-2xl py-3 px-5 bg-white rounded-l-xl max-lg:text-xl"
         />
         <Mail size={55} className="bg-greenlight text-2xl py-4 rounded-r-xl" />
       </div>
