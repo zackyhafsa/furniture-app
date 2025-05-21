@@ -20,7 +20,7 @@ const AccordionItem = ({ title, content, isOpen, heading, onClick }: AccordionIt
   }, [isOpen]);
 
   return (
-    <div className="w-full rounded-md overflow-hidden transition-all">
+    <div className="w-full rounded-md overflow-hidden transition-all max-lg:px-[10%]">
       <button
         onClick={onClick}
         className="w-full flex items-center justify-between px-5 py-4 bg-graylight text-left text-text font-medium"

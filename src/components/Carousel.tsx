@@ -35,12 +35,15 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full max-w-screen-xl overflow-hidden pt-10 mx-auto py-4 px-10">
+    <div className="relative w-full max-w-screen-xl overflow-hidden pt-10 mx-auto py-4 px-10 max-lg:pb-10">
       <div className="flex justify-center items-center gap-4">
+        <button onClick={prev} className="p-2 rounded-full bg-greenlight hover:bg-lime-300 absolute z-[999] left-2 lg:hidden">
+          <ChevronLeft size={40} />
+        </button>
         <div className="relative w-full">
           <div
             className="flex transition-transform duration-500 ease-in-out gap-10"
-            style={{ transform: `translateX(-${activeIndex * 200}px)` }}
+            style={{ transform: `translateX(-${activeIndex * 290}px)` }}
           >
             {images.map((item, index) => (
               <div
@@ -58,16 +61,23 @@ const Carousel = () => {
                 />
                 {index === activeIndex && (
                   <div className="text-black text-sm absolute bottom-5 space-y-3 ml-5">
-                    <p className="bg-white/50 text-lg inline-block px-4 py-2 rounded-xl">${item.price}</p>
-                    <p className="text-3xl text-white text-shadow-xs text-shadow-primary">{item.title}</p>
+                    <p className="bg-white/50 text-lg inline-block px-4 py-2 rounded-xl">
+                      ${item.price}
+                    </p>
+                    <p className="text-3xl text-white text-shadow-xs text-shadow-primary">
+                      {item.title}
+                    </p>
                   </div>
                 )}
               </div>
             ))}
           </div>
         </div>
+      <button onClick={next} className="p-2 rounded-full bg-greenlight hover:bg-lime-300 absolute z-[999] right-2 lg:hidden">
+        <ChevronRight size={40} />
+      </button>
       </div>
-      <div className="flex justify-end gap-5 mt-10">
+      <div className="flex justify-end gap-5 mt-10 max-lg:hidden">
         <button onClick={prev} className="p-2 rounded-full bg-greenlight hover:bg-lime-300">
           <ChevronLeft size={40} />
         </button>

@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between items-center px-[5%] py-6 fixed top-0 right-0 left-0 bg-white z-[9999]">
       <div>
-        <img src="./logo.svg" alt="logo" width={120} />
+        <img src="./logo.svg" alt="logo" width={110} />
       </div>
       <ul className="flex gap-10 max-md:hidden max-lg:gap-5 max-lg:text-sm">
         <li>
@@ -56,7 +56,7 @@ const Navbar = () => {
               <a href="#">Contacts</a>
             </li>
           </ul>
-          <div className="flex flex-col gap-5 max-lg:text-sm items-center  md:hidden">
+          <div className="flex flex-col gap-2 max-lg:text-sm items-center  md:hidden">
             <a
               href="#"
               className="bg-greenlight hover:bg-lime-300 transition-all ease-in-out duration-300 text-text rounded-md px-6 py-3 w-full"
