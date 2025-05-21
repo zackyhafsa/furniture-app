@@ -37,26 +37,17 @@ const Membership = () => {
         transition={{ duration: 0.8, delay: 0.5 }}
         viewport={{ once: true }}
       >
-        <motion.input
+        <input
           type="email"
           placeholder="Enter your email here"
           className="text-2xl py-3 px-2 bg-white rounded-l-xl max-lg:text-xl max-md:text-lg"
-          initial={{ x: -30, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          viewport={{ once: true }}
         />
-        <motion.div
-          initial={{ x: 30, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.7 }}
-          viewport={{ once: true }}
-        >
+        <div>
           <Mail
             size={55}
             className="bg-greenlight text-2xl py-4 rounded-r-xl max-lg:text-7xl max-lg:px-2 w-10"
           />
-        </motion.div>
+        </div>
       </motion.div>
     </motion.div>
   );

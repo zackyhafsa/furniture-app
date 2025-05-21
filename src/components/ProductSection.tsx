@@ -14,8 +14,8 @@ const ProductSection = () => {
       >
         <motion.div
           className="text-greenlight space-y-3"
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
@@ -26,8 +26,8 @@ const ProductSection = () => {
         <motion.a
           href="#"
           className="bg-greenlight hover:bg-lime-300 text-text rounded-md px-6 py-3 max-lg:px-1"
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
         >
