@@ -41,7 +41,7 @@ const Navbar = () => {
         size={30}
       />
       {open && (
-        <div className="absolute bg-white top-full right-0 w-60 text-center rounded-md p-5 space-y-3">
+        <div className="absolute bg-white top-full right-0 w-60 text-center rounded-b-md p-5 space-y-3">
           <ul className="flex  flex-col md:hidden">
             <li className="hover:bg-gray-200 py-3 rounded-md transition-all ease-in-out duration-300">
               <a href="#">About Us</a>
