@@ -36,7 +36,7 @@ const Navbar = () => {
         </div>
       </div>
       <Menu
-        className="md:hidden rounded-full hover:bg-gray-300 active:bg-gray-400 w-11 h-11 p-2"
+        className="md:hidden rounded-full hover:bg-gray-300 active:bg-gray-400"
         onClick={handleOpen}
         size={30}
       />
